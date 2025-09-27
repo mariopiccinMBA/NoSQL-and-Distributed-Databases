@@ -229,7 +229,7 @@ A indexação é crucial no MongoDB pois acelera dramaticamente as consultas, ev
 | `{ 'product_id': 1 }` | **Produtos mais visualizados**<br>**Cross-collection:** Conversion rate | Análise de produtos específicos no clickstream | `$match`, `$group` |
 | `{ 'product_category': 1 }` | **Funil por categoria**<br>**Interesse por categoria** | Agrupamento de eventos por categoria de produto | `$group`, `$match` |
 
-- **Índices para Marketing e Analytics**
+**Índices para Marketing e Analytics**
 
 | Índice | Pergunta(s) Atendida(s) | Justificativa | Benefício Específico |
 |--------|-------------------------|---------------|---------------------|
@@ -237,7 +237,7 @@ A indexação é crucial no MongoDB pois acelera dramaticamente as consultas, ev
 | `{ 'event_type': 1, 'product_category': 1 }` | **Funil de conversão por categoria**<br>**Eventos específicos por categoria** | Combinação de tipo de evento com categoria para análises detalhadas | Pipeline otimizado |
 | `{ 'session_id': 1, 'event_timestamp': 1 }` | **Jornada temporal da sessão**<br>**Duração de sessão** | Ordenação de eventos dentro de cada sessão | Análise comportamental |
 
-- **Índice TTL (Time To Live)**
+**Índice TTL (Time To Live)**
 
 | Índice TTL | Função | Configuração | Benefício |
 |------------|--------|--------------|-----------|
